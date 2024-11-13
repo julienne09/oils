@@ -1,0 +1,352 @@
+/* General Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+   
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #d4af37; /* Gold border */
+}
+
+.logo {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #6b8e23; /* Green color */
+}
+
+.logo .oil-drop {
+    color: #d4af37; /* Gold for the oil drop */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #6b8e23;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: #d4af37; /* Gold color on hover */
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 5px;
+}
+
+/* Categories Section */
+.categories {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f4f0;
+}
+
+.categories h2 {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.category {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #6b8e23;
+    border: 2px solid #d4af37; /* Gold border */
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.category:hover {
+    background-color: #6b8e23; /* Green background on hover */
+    color: #ffffff; /* White text on hover */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+}
+
+/* Essential Oils List */
+.oils-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.oil-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.oil-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.oil-item h3 {
+    margin: 10px 0;
+    color: #00796b;
+}
+
+.oil-item p {
+    margin: 5px 15px;
+    font-size: 14px;
+}
+
+.add-to-cart {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.add-to-cart:hover {
+    background-color: #004d40;
+}
+.oil-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.oil-item img {
+    width: 100%;
+    height: 500px; /* Adjust to your preferred height */
+    object-fit: cover;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+}
+
+/* Oils List Styles */
+.oils-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.oil-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Ensures button positioning inside the container */
+}
+
+.oil-item img {
+    width: 100%;
+    height: 250px; /* Adjust height of images */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* For zoom effect */
+}
+
+/* Hover effect for images */
+.oil-item:hover img {
+    transform: scale(1.1); /* Zooms in the image on hover */
+}
+
+/* Image Container for overlay */
+.img-container {
+    position: relative;
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 80%;
+    display: none; /* Hide button initially */
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #004d40;
+}
+
+/* Show the "Add to Cart" button on hover */
+.oil-item:hover .add-to-cart {
+    display: block;
+}
+
+.oil-item h3 {
+    margin: 10px 0;
+    color: #00796b;
+}
+
+.oil-item p {
+    margin: 5px 15px;
+    font-size: 14px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #3e8e41;  /* Adjust color for Carrier Oils */
+}
+
+/* Oils List Styles */
+.oils-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.oil-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.oil-item img {
+    width: 100%;
+    height: 250px; /* Adjust height of images */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* For zoom effect */
+}
+
+/* Hover effect for images */
+.oil-item:hover img {
+    transform: scale(1.1); /* Zooms in the image on hover */
+}
+
+/* Image Container for overlay */
+.img-container {
+    position: relative;
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3e8e41;  /* Adjust color for Carrier Oils */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 80%;
+    display: none; /* Hide button initially */
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #2c6a2b; /* Darker shade on hover */
+}
+
+/* Show the "Add to Cart" button on hover */
+.oil-item:hover .add-to-cart {
+    display: block;
+}
+
+.oil-item h3 {
+    margin: 10px 0;
+    color: #3e8e41;  /* Adjust color for Carrier Oils */
+}
+
+.oil-item p {
+    margin: 5px 15px;
+    font-size: 14px;
+}
+.cart{
+    background-color: gold;
+}
